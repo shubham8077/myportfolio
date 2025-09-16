@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Federant&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .federant { font-family: 'Federant', serif; }
+    .exo { font-family: 'Exo', sans-serif; }
+
+    progress::-webkit-progress-bar {
+      background-color: white;
+      border: 3px solid black;
+    }
+    progress::-webkit-progress-value {
+      background-color: black;
+    }
+    .typed-cursor {
+      font-size: 1.5rem;
+      line-height: 1.3;
+      color: white;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-pink-200 to-yellow-200">
+
+  <!-- Navbar -->
+  <nav class="flex p-2 bg-slate-400 shadow-[0px_6px_0px_#000] rounded-b-3xl w-full fixed">
+    <div class="flex flex-1 items-center justify-evenly text-xl md:text-2xl lg:text-3xl space-x-2">
+      <a href="#" title="Home" class="px-3 py-1 border-2 border-black rounded shadow-[3px_3px_0px_#000] bg-slate-200 hover:bg-indigo-500">&#127968;</a>
+      <a href="#about" title="About" class="px-3 py-1 border-2 border-black rounded shadow-[3px_3px_0px_#000] bg-slate-200 hover:bg-indigo-500">&#8505;</a>
+      <a href="#education" title="Education" class="px-3 py-1 border-2 border-black rounded shadow-[3px_3px_0px_#000] bg-slate-200 hover:bg-indigo-500">&#127891;</a>
+      <a href="#skills" title="Skills" class="px-3 py-1 border-2 border-black rounded shadow-[3px_3px_0px_#000] bg-slate-200 hover:bg-indigo-500">&#128202;</a>
+      <a href="#projects" title="Projects" class="px-3 py-1 border-2 border-black rounded shadow-[3px_3px_0px_#000] bg-slate-200 hover:bg-indigo-500">&#128451;</a>
+      <a href="#contact" title="Contact" class="px-3 py-1 border-2 border-black rounded shadow-[3px_3px_0px_#000] bg-slate-200 hover:bg-indigo-500">&#128233;</a>
+    </div>
+  </nav>
+
+<!-- Resume Button -->
+<a href="myresume.pdf" download title="Resume"
+   class="fixed bottom-6 right-6 px-5 py-3 border-2 border-black rounded shadow-[3px_3px_0px_#000] bg-indigo-500 hover:bg-indigo-700 hover:shadow-[0_0_20px_#6366f1] transition">
+  &#128233;
+</a>
+
+  <main class="max-w-5xl mx-auto px-4 pt-20">
+
+    <!-- Typing banner -->
+    <div class="bg-indigo-500 federant border-4 mt-6 border-black flex justify-center shadow-[6px_6px_0px_#000] p-3 text-center">
+      <span id="element" class="text-xl md:text-2xl lg:text-3xl text-white font-bold"></span>
+    </div>
+
+    <!-- Profile Image -->
+    <!-- <div class="flex justify-center mt-6">
+      <img src="me.jpg" alt="Profile" class="border-4 border-black shadow-[6px_6px_0px_#000] w-11/12 md:w-2/3 lg:w-1/2 rounded-lg">
+    </div> -->
+
+    <!-- About -->
+    <section id="about" class="my-8 border-4 border-black shadow-[6px_6px_0px_#000]">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl federant font-bold text-center border-b-8 border-black bg-yellow-400 p-2">ABOUT</h2>
+      <p class="text-base md:text-lg lg:text-xl text-gray-800 font-semibold exo p-4 bg-yellow-200">
+        I am a passionate learner and aspiring developer with an interest in building creative, user-friendly web and mobile experiences. I enjoy exploring new technologies, improving my problem-solving skills, and turning ideas into functional projects. Currently seeking opportunities to grow my skills and contribute to real-world applications.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="my-8 border-4 border-black shadow-[6px_6px_0px_#000]">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl federant font-bold text-center border-b-8 border-black bg-slate-300 p-2">EDUCATION</h2>
+      <div class="text-base md:text-lg lg:text-xl exo font-semibold bg-white">
+        <details class="p-4 border-b-4 border-black">
+          <summary class="font-bold">Bachelor's in Computer Science</summary>
+          <p>Willingdon College, Sangli</p>
+          <div class="flex justify-between"><span>2024</span><span class="text-green-600">9.1 CGPA</span></div>
+        </details>
+        <details class="p-4 border-b-4 border-black">
+          <summary class="font-bold">Higher Secondary Certificate</summary>
+          <p>Swami Vivekanand Jr. College, Gonewadi</p>
+          <div class="flex justify-between"><span>2021</span><span class="text-green-600">88.83%</span></div>
+        </details>
+        <details class="p-4">
+          <summary class="font-bold">Secondary School Certificate</summary>
+          <p>Bal Vidya Vihar Primary School, Parbhani</p>
+          <div class="flex justify-between"><span>2019</span><span class="text-green-600">84%</span></div>
+        </details>
+      </div>
+    </section>
+
+  <!-- Skills -->
+<section id="skills" class="my-8 border-4 border-black shadow-[6px_6px_0px_#000]">
+  <h2 class="text-2xl md:text-3xl lg:text-4xl federant font-bold text-center border-b-8 border-black bg-green-300 p-2">SKILLS</h2>
+  <div class="text-base md:text-lg lg:text-xl exo font-semibold bg-white">
+
+    <details class="p-3 border-b-4 border-black bg-green-100">
+      <summary class="cursor-pointer font-bold text-center">HTML</summary>
+      <p class="mt-2 text-gray-700">HTML is the backbone of web pages. It structures content using tags like headings, paragraphs, images, and links.</p>
+    </details>
+
+    <details class="p-3 border-b-4 border-black bg-green-100">
+      <summary class="cursor-pointer font-bold text-center">CSS</summary>
+      <p class="mt-2 text-gray-700">CSS styles the web pages with colors, layouts, animations, and responsiveness to make them visually appealing.</p>
+    </details>
+
+    <details class="p-3 border-b-4 border-black bg-green-100">
+      <summary class="cursor-pointer font-bold text-center">JavaScript</summary>
+      <p class="mt-2 text-gray-700">JavaScript adds interactivity to websites. It handles events, updates content dynamically, and powers logic.</p>
+    </details>
+
+    <details class="p-3 border-b-4 border-black bg-green-100">
+      <summary class="cursor-pointer font-bold text-center">Tailwind CSS</summary>
+      <p class="mt-2 text-gray-700">Tailwind is a utility-first CSS framework that helps build responsive designs quickly using ready-made classes.</p>
+    </details>
+
+    <details class="p-3 bg-green-100">
+      <summary class="cursor-pointer font-bold text-center">MERN Stack</summary>
+      <p class="mt-2 text-gray-700">MERN combines MongoDB, Express, React, and Node.js to build full-stack applications with both frontend and backend.</p>
+    </details>
+
+    <details class="p-3 border-t-4 border-black bg-green-100">
+  <summary class="cursor-pointer font-bold text-center">PHP</summary>
+  <p class="mt-2 text-gray-700">PHP is a server-side scripting language used for building dynamic websites and web applications, often paired with databases.</p>
+</details>
+
+<details class="p-3 border-t-4 border-black bg-green-100">
+  <summary class="cursor-pointer font-bold text-center">MySQL</summary>
+  <p class="mt-2 text-gray-700">MySQL is a popular relational database management system that stores and manages structured data efficiently.</p>
+</details>
+  </div>
+</section>
+ 
+
+    <!-- Projects -->
+    <section id="projects" class="my-8 border-4 border-black shadow-[6px_6px_0px_#000]">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl federant font-bold text-center border-b-8 border-black bg-cyan-300 p-2">PROJECTS</h2>
+      <div class="text-base md:text-lg lg:text-xl exo font-semibold bg-white">
+        <!-- <div class="p-4 border-b-4 border-black bg-cyan-100">
+          <p class="font-bold text-lg md:text-xl text-center">ART GALLERY WEB APP</p>
+          <p class="text-cyan-800">A MERN app where artists can post, sell and request artworks.</p>
+          <p class="text-sm">MongoDB • Express • React • Node</p>
+        </div> -->
+        <div class="p-4 border-b-4 border-black bg-cyan-100">
+          <p class="font-bold text-lg md:text-xl text-center">E-SlamBook</p>
+          <p class="text-cyan-800">Digital slam book to share and fill entries with friends.</p>
+          <p class="text-sm">HTML • Tailwind • PHP • MySQL</p>
+          <a href="https://github.com/shubham8077/E-SlamBook" class="block text-center mt-2 bg-cyan-400 border-2 border-black py-2 hover:bg-cyan-600 hover:text-white shadow-[3px_3px_0px_#000] hover:shadow-none">VIEW PROJECT</a>
+        </div>
+        <div class="p-4 bg-cyan-100">
+          <p class="font-bold text-lg md:text-xl text-center">EasyHangul</p>
+          <p class="text-cyan-800">Platform to learn Korean characters in a simple way with Hindi/English translation.</p>
+          <p class="text-sm">HTML • Tailwind • Locomotive Scroll • AOS</p>
+          <a href="https://shubham8077.github.io/easyhangul/index.html" class="block text-center mt-2 bg-cyan-400 border-2 border-black py-2 hover:bg-cyan-600 hover:text-white shadow-[3px_3px_0px_#000] hover:shadow-none">VIEW PROJECT</a>
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <!-- Contact -->
+     <footer>
+  <section id="contact" class="py-12 px-6 bg-black text-white mt-8">
+    <div class="max-w-4xl mx-auto text-center space-y-4">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold federant">Contact</h2>
+      <p class="exo text-gray-400">Feel free to reach out for collaborations or just a friendly hello 👋</p>
+      <p class="text-lg"><i class="fa-solid fa-envelope text-cyan-400 mr-2"></i> codemeshubham@gmail.com</p>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-500 text-sm">
+       Shubham ©2025
+    </div>
+  </section>
+</footer>
+
+  <!-- Typed.js -->
+  <script>
+    new Typed('#element', {
+      strings: ['Web Developer', 'Frontend Explorer','Creative Coder','MERN Stack','Full-Stack Developer','Code + Creativity'],
+      typeSpeed: 80,
+      backSpeed: 40,
+      loop: true,
+    });
+  </script>
+
+</body>
+</html>
